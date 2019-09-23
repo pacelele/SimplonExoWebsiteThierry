@@ -36,8 +36,9 @@ body {
 /*Body Ends Here*/
 
 /*Nav Bar Starts Here*/
+
 .tr {
-    color:black;
+    background-color:#FFDEAD;
     font-weight: 700;
     }
 a:hover {
@@ -58,6 +59,11 @@ a:hover {
     margin-left: 200px;
     margin-right: 200px;
         }
+
+#haut {
+    background-image: url(Images_Site_Web/Partenaires_Légume_Fruit_light.jpg);
+}
+
 /*Article Section Ends Here*/
 
 /*Footer Starts Here*/       

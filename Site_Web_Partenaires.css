@@ -6,6 +6,7 @@
     margin-top: 20px;
     border-radius: 40px;
     font-variant:small-caps;
+    
     }
  #header h1 {
     font-size: 40pt;
@@ -50,6 +51,7 @@ a:hover {
 /*Article Section starts Here*/
 #art1 {
     text-align: center;
+    
 }
 .text1 {
     text-align: justify;
@@ -61,16 +63,12 @@ a:hover {
     margin-left: 200px;
     margin-right: 200px;
 }
-.TitreRecette {
-    font-size: medium;
-    font-weight: 600;
-    color: #154360;
-}
+
 #PlusInformation {
-/*Ca ne Marche pas background image !!!! A revoir*/
-    background-image: url("Partenaire_Fruit.jpg");
-    background-size: cover;
-                }
+    background-image: url(Images_Site_Web/légumes.jpg);
+}
+
+
 /*Article Section Ends Here*/
 
 /*Footer Section Starts Here*/
@@ -87,4 +85,6 @@ a:hover {
 .CouleurText1 {
     color: #154360;
 }
+
+
 /*Footer Section Ends Here*/

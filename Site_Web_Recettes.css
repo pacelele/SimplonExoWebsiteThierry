@@ -47,13 +47,20 @@ a:hover {
 /*Nav Bar Ends Here*/
 
 /*Article Section Starts Here*/
+#recettes {
+    background-image: url(Images_Site_Web/nappe_bois.jpg);
+    
+
+}
 #art1 {
     text-align: center;
+    
       }
 .text1 {
     text-align: justify;
     margin-left: 200px;
     margin-right: 200px;
+    
         }
 
 /*Article Section Ends Here*/
