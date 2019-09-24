@@ -35,15 +35,16 @@
         <td></td> <td></td> <td></td> <td></td><td></td>
         <td></td> <td></td> <td></td> <td></td><td></td>   
         <td><a href="Site_Web_Vins.html"target="_blank"> LES VINS</a></td>
-        <td></td> <td></td> <td></td> <td></td><td></td>
-        <td></td> <td></td> <td></td> <td></td><td></td>           
-        <td> <a href=""target="_blank"> LIVRE D'OR</a></td>
+        
         <td></td> <td></td> <td></td> <td></td><td></td>
         <td></td> <td></td> <td></td> <td></td><td></td>  
         <td> <a href="Site_Web_Partenaires.html"target="_blank">NOS PARTENAIRES</a></td>
         <td></td> <td></td> <td></td> <td></td><td></td> 
         <td></td> <td></td> <td></td> <td></td><td></td>  
         <td> <a href="Site_Web_Contact.html" target="_blank"> CONTACT/RESERVATION</a></td>
+        <td></td> <td></td> <td></td> <td></td><td></td>
+        <td></td> <td></td> <td></td> <td></td><td></td>           
+        <td> <a href="Site_Web_Livre.html"target="_blank"> LIVRE D'OR</a></td>
         </tr>
     </table>
 </aside>
@@ -64,27 +65,50 @@
 </div>
 <div id="horaire" class="section" align="center">
     <h3>Heures d'Ouverture</h3>
-    <p>Lundi - Vendredi 12h00-14h30 et 19h-22h30 | Samedi 19h00-23h00 | Fermé le dimanche</p>
+    <p>Lundi - Vendredi 11h30-14h30 et 19h-22h30 | Samedi 18h30-23h00 | Fermé le dimanche</p>
 </div>
         
 <!--Form Starts Here-->
-<div id="form" class="section" 
-    style="background-image:linear-gradient(to left top, #eee9b9, white")>
+<div id="form" class="section" style="background-image:linear-gradient(to left top, #eee9b9, white")>
+    <form autocomplete="off" align= "center" autofocus autocomplete="off" >
     <h1 align="center"> Envoyez-Nous Un Message / Réservez une Table</h1>
-        <form autocomplete="off" align= "center" >
-        <input class="input" text="Name" name="Name" placeholder="Nom" required/>
+    <fieldset>
+        <legend> Contact</legend>
+        <label >Nom</label>
+        <input id="nom" class="input" text="Name" name="Name" placeholder="Nom" required/>
         </br/> </br/>
+        <label >Email</label>
         <input class="input" type="email" name="email" placeholder="Email@email.com" required/>
         <br/> </br/>
-        <input class="input" type="Phone" name="phone" placeholder="Téléphone" required/>
-        <br/> </br/>
-        <input class="input" text="Number" name="Number" placeholder="Nombre de personnes"/>
-        <br/> </br/>
-        <textarea class="textarea" name="Message" placeholder="Saisir le Message"
-        required></textarea>
-        <br/> </br/>
-        <input class="input" type="submit" value="Envoyer" class="submit" />
-        </form>
+        <label >Téléphone</label>
+        <input class="input" type="Phone" name="phone" placeholder="+33XXXXXXXXX" required />
+    </fieldset>
+    <fieldset>
+        <legend> Autres Renseignements</legend>
+        <label  > Nombre de Personnes</label>
+        <input  id="NombrePersonne" class="input" type="number" placeholder="XX" pattern="[0-9] {2}" required />
+        <br/> <br/>
+        <label> Horaires Réservation</label>
+        <input id="Horaire" class="input" type="text" list="Horaires" placeholder="Choisisez Votre Horaire SVP" required/>
+        <datalist id="Horaires">
+            <option value ="11H30-12H30">11H30-12H30</option>
+            <option value="12H30-13H30">12H30-13H30</option>
+            <option value="13H30-14H30">13H30-14H30</option>
+            <option value ="18H30-19H30">18H30-19H30</option>
+            <option value="19H30-20H30">19H30-20H30</option>
+            <option value="20H30-21H30">20H30-21H30</option>
+        </datalist>
+        <br/> <br/>
+        <label>Jour de Réservation</label>
+        <input id="Jours" class="input" type="date" required/>
+        <br/> <br/>
+        <label for="message" >Votre Message</label>
+        <textarea id="textarea" class="textarea" name="Message" placeholder="Veuillez Saisir Votre Message Ici. Merci." required></textarea>
+        
+        <input id="Envoyer" class="input" type="submit" value="Envoyer"  />
+        <input id="Reset" class="input" type="reset" value="Réinitialiser"  />
+    </fieldset>
+</form>
 </div>
 <!--Form Ends Here-->      
            

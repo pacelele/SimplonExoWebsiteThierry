@@ -49,7 +49,11 @@ a:hover {
 /*Article Section Starts Here*/
 #art1 {
     text-align: center;
+    background-image: url(Images_Site_Web/Carte_Oloron.png);
+    background-size:cover;
       }
+      
+
 .text1 {
     text-align: justify;
     margin-left: 200px;
