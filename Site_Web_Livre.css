@@ -72,7 +72,9 @@ input[type=reset] {
 
 input:valid {
     border: 4px solid #239C1C;
+
   }
+    
 
 #Envoyer {
       border:none;

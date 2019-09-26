@@ -32,7 +32,7 @@ body {
     font-size: 15pt;
     font-variant: small-caps;
     background-color:#FFDEAD;
-    padding: 70px;
+    
     margin-right: 30px;
 }
 /*Body Ends Here*/
@@ -42,7 +42,7 @@ body {
 .tr {
     font-weight: 700;
     background-color:#FFDEAD;
-    text-align: 
+    
 }
 
 a:hover {
@@ -95,3 +95,67 @@ a:hover {
     color: #154360;
 }
 /*Footer Section Ends Here*/
+
+/* Media Queries Start Here */
+
+            
+
+
+
+/* Sur les écrans quand la largeur de la fenêtre fait au maximum exemple */
+@media  all and (max-width:767px) {
+       
+        .image {width: 280px;}
+        img {width: 200px;} 
+        #nav table tr td {dispaly:block;}
+        .entry-content table, tbody {display:block;}
+        .entry-content tr {display:table;}
+        .entry-content td {display:table-row;}
+
+        
+          
+
+
+                
+            }
+
+}
+
+  
+            /* Sur tous types d'écran quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+@media all and (min-width:768px) and (max-width:1024px) {
+
+            section
+            img {width:150px;}
+   
+    
+
+
+
+
+}
+    
+ 
+            
+            /* Sur tous types d'écran quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+@media all and (min-width:768px) and (max-width:1388px) {
+     
+
+
+            }
+
+
+           /* Sur les téléviseurs */
+@media tv {
+
+
+            }
+            
+            /* Sur tous types d'écrans orientés verticalement */
+@media all and (orientation:portrait) {
+
+
+            }
+
+
+            
