@@ -24,32 +24,27 @@
 <!--Header Section Ends Here-->
 
 <!--Navigation Bar Starts Here-->
-<aside id="nav" class="section" >
-    <table >
-        <tr class="tr">
-        <td> <a href="Site_Web_Mister_Cuisto.html" target="_blank"> ACCUEIL</a> </td>
-        <td></td> <td></td> <td></td> <td></td><td></td>
-        <td></td> <td></td> <td></td> <td></td><td></td>        
-        <td> <a href="Site_Web_Menu_Chef.html" target="_blank">LE CHEF</a></td>
-        <td></td> <td></td> <td></td> <td></td><td></td>
-        <td></td> <td></td> <td></td> <td></td><td></td>   
-        <td><a href="Site_Web_Recettes.html"target="_blank">RECETTES</a> </td>
-        <td></td> <td></td> <td></td> <td></td><td></td>
-        <td></td> <td></td> <td></td> <td></td><td></td>   
-        <td><a href="Site_Web_Vins.html"target="_blank"> LES VINS</a></td>
+<nav id="nav" class="section" >
         
-        <td></td> <td></td> <td></td> <td></td><td></td>
-        <td></td> <td></td> <td></td> <td></td><td></td>  
-        <td> <a href="Site_Web_Partenaires.html"target="_blank">NOS PARTENAIRES</a></td>
-        <td></td> <td></td> <td></td> <td></td><td></td> 
-        <td></td> <td></td> <td></td> <td></td><td></td>  
-        <td> <a href="Site_Web_Contact.html" target="_blank"> CONTACT/RESERVATION</a></td>
-        <td></td> <td></td> <td></td> <td></td><td></td>
-        <td></td> <td></td> <td></td> <td></td><td></td>           
-        <td> <a href="Site_Web_Livre.html"target="_blank"> LIVRE D'OR</a></td>
-        </tr>
-    </table>
-</aside>
+    <ul id="tr">
+    <li> <a href="Site_Web_Mister_Cuisto.html" target="_blank"> ACCUEIL</a> </li>
+      
+    <li> <a href="Site_Web_Menu_Chef.html" target="_blank">LE CHEF</a></li>
+     
+    <li><a href="Site_Web_Recettes.html"target="_blank">RECETTES</a> </v>
+    
+    <li><a href="Site_Web_Vins.html"target="_blank"> LES VINS</a></li>
+    
+    
+    <li> <a href="Site_Web_Partenaires.html"target="_blank">NOS PARTENAIRES</a></li>
+    
+    <li> <a href="Site_Web_Contact.html" target="_blank"> CONTACT/RESERVATION</a></li>
+    
+    
+    <li> <a href="Site_Web_Livre.html"target="_blank"> LIVRE D'OR</a></li>
+    
+    </ul>
+</nav>
 <!--Navigation Bar Ends Here-->
 
 <!-- Article Section Starts Here-->
@@ -72,26 +67,26 @@
         
 <!--Form Starts Here-->
 <div id="form" class="section" style="background-image:linear-gradient(to left top, #eee9b9, white")>
-    <form autocomplete="off" align= "center" autofocus autocomplete="off" >
+    <form action="Réservation.php" method="POST" autocomplete="off" align= "center" autofocus autocomplete="off" >
     <h1 align="center"> Envoyez-Nous Un Message / Réservez une Table</h1>
     <fieldset>
         <legend> Contact</legend>
         <label >Nom</label>
-        <input id="nom" class="input" text="Name" name="Name" placeholder="Nom" required/>
+        <input id="nom" class="input" text="Name" name="name" placeholder="Nom" required/>
         </br/> </br/>
         <label >Email</label>
         <input class="input" type="email" name="email" placeholder="Email@email.com" required/>
         <br/> </br/>
         <label >Téléphone</label>
-        <input class="input" type="Phone" name="phone" placeholder="+33XXXXXXXXX" required />
+        <input class="input" type="Phone" name="telephone" placeholder="+33XXXXXXXXX" required />
     </fieldset>
     <fieldset>
         <legend> Autres Renseignements</legend>
         <label  > Nombre de Personnes</label>
-        <input  id="NombrePersonne" class="input" type="number" placeholder="XX" pattern="[0-9] {2}" required />
+        <input  id="NombrePersonne" class="input" type="number" name="nombrepersonne" placeholder="XX" pattern="[0-9] {2}" required />
         <br/> <br/>
         <label> Horaires Réservation</label>
-        <input id="Horaire" class="input" type="text" list="Horaires" placeholder="Choisisez Votre Horaire SVP" required/>
+        <input id="Horaire" class="input" type="text" list="Horaires" name="horaire" placeholder="Choisisez Votre Horaire SVP" required/>
         <datalist id="Horaires">
             <option value ="11H30-12H30">11H30-12H30</option>
             <option value="12H30-13H30">12H30-13H30</option>
@@ -102,10 +97,10 @@
         </datalist>
         <br/> <br/>
         <label>Jour de Réservation</label>
-        <input id="Jours" class="input" type="date" required/>
+        <input id="Jours" class="input" type="date" name="jours" required/>
         <br/> <br/>
         <label for="message" >Votre Message</label>
-        <textarea id="textarea" class="textarea" name="Message" placeholder="Veuillez Saisir Votre Message Ici. Merci." required></textarea>
+        <textarea id="textarea" class="textarea" name="message" placeholder="Veuillez Saisir Votre Message Ici. Merci." required></textarea>
         
         <input id="Envoyer" class="input" type="submit" value="Envoyer"  />
         <input id="Reset" class="input" type="reset" value="Réinitialiser"  />

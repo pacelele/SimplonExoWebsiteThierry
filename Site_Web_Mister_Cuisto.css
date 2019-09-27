@@ -39,9 +39,13 @@ body {
 
 /*Nav Bar Starts Here*/
 
-.tr {
+#tr {
     font-weight: 700;
     background-color:#FFDEAD;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    
     
 }
 
@@ -103,30 +107,30 @@ a:hover {
 
 
 /* Sur les écrans quand la largeur de la fenêtre fait au maximum exemple */
-@media  all and (max-width:767px) {
+@media all and (max-width:768px) {
        
         .image {width: 280px;}
         img {width: 200px;} 
-        #nav table tr td {dispaly:block;}
-        .entry-content table, tbody {display:block;}
-        .entry-content tr {display:table;}
-        .entry-content td {display:table-row;}
+        #tr {display: block; }
+        .text1 {width: 250px; text-align: left; margin-left:25px; margin-right:-50px; text-align:justify;}
+        .text2 {width: 250px; text-align: left; margin-left:25px; margin-right:-50px; text-align:justify;}
 
         
           
 
 
                 
-            }
+            
 
 }
 
   
             /* Sur tous types d'écran quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-@media all and (min-width:768px) and (max-width:1024px) {
+@media all and (min-width:769px) and (max-width:1024px) {
 
             section
             img {width:150px;}
+            #tr {display: block; }
    
     
 

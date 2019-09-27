@@ -37,10 +37,15 @@ body {
 
 /*Nav Bar Starts Here*/
 
-.tr {
-    background-color:#FFDEAD;
+#tr {
     font-weight: 700;
-    }
+    background-color:#FFDEAD;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
 a:hover {
     color:#ff9900;
     font-size: 30px;
